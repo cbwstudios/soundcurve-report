@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>SoundCurve &mdash; Text-Messaging Compliance Review</title>
+<style>
+:root{
+  --bg:#0f1117; --panel:#161922; --panel2:#1c2030; --ink:#e7ebf3; --mut:#8b93a7; --line:#2a3042;
+  --accent:#58a6ff; --amber:#d29922; --green:#2ea043; --red:#f85149;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{
+  background:linear-gradient(180deg,#0c0e14,#0f1117); color:var(--ink);
+  font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  font-size:14px; line-height:1.6; padding:32px clamp(16px,4vw,56px) 110px;
+  min-height:100vh;
+}
+.wrap{max-width:900px;margin:0 auto}
+header{border-bottom:1px solid var(--line);padding-bottom:20px;margin-bottom:22px}
+h1{font-size:22px;font-weight:700;letter-spacing:-.01em;margin-bottom:8px}
+.sub{color:var(--mut);font-size:13.5px;max-width:760px}
+.back{display:inline-block;margin-bottom:16px;color:var(--accent);text-decoration:none;font-size:13px}
+.back:hover{text-decoration:underline}
+.callout{border:1px solid rgba(210,153,34,.45);background:rgba(210,153,34,.08);
+  border-radius:10px;padding:14px 16px;margin:18px 0}
+.callout b{color:var(--amber)}
+.callout.ok{border-color:rgba(46,160,67,.45);background:rgba(46,160,67,.08)}
+.callout.ok b{color:var(--green)}
+h2{font-size:17px;margin:34px 0 4px;padding-top:18px;border-top:1px solid var(--line)}
+h2 .n{color:var(--mut);font-weight:500;font-size:13px;margin-left:6px}
+.why{color:var(--mut);font-size:13px;margin-bottom:14px}
+.item{background:var(--panel);border:1px solid var(--line);border-radius:10px;
+  padding:14px 16px;margin:12px 0}
+.item h3{font-size:14px;font-weight:600;margin-bottom:4px}
+.item .loc{color:var(--mut);font-size:11.5px;font-family:ui-monospace,Menlo,monospace;margin-bottom:10px}
+.diff{border-radius:8px;padding:9px 12px;margin:7px 0;font-size:13px;line-height:1.55}
+.was{background:rgba(248,81,73,.10);border-left:3px solid var(--red)}
+.now{background:rgba(46,160,67,.10);border-left:3px solid var(--green)}
+.tag{display:inline-block;font-size:10px;font-weight:700;letter-spacing:.06em;
+  text-transform:uppercase;margin-bottom:4px}
+.was .tag{color:var(--red)} .now .tag{color:var(--green)}
+.note{color:var(--mut);font-size:12.5px;margin-top:8px;font-style:italic}
+ul{margin:8px 0 0 20px} li{margin:5px 0}
+code{background:#000;padding:1px 6px;border-radius:4px;font-size:12px}
+footer{margin-top:40px;border-top:1px solid var(--line);padding-top:18px;color:var(--mut);font-size:12.5px}
+footer a{color:var(--accent);text-decoration:none}
+footer a:hover{text-decoration:underline}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<a class="back" href="index.html">&larr; Back to the report</a>
+
+<header>
+  <h1>Text-Messaging Compliance &mdash; Review &amp; Approval</h1>
+  <div class="sub">
+    US carriers require every business to be registered before it can send business text messages, and they review
+    your website as part of that registration. Below is every wording change made to meet those requirements,
+    shown as before and after. Prepared September 1, 2026.
+  </div>
+</header>
+
+<div class="callout">
+  <b>&#9873; Nothing here is live yet.</b><br>
+  Every change below is built and verified on the staging site only. The live site is untouched.
+  Once you approve, the changes are published to soundcurve.com and the carrier registrations are submitted.
+</div>
+
+<div class="callout ok">
+  <b>&#10003; How to review</b><br>
+  Read each before/after below. If you are happy, reply <b>&ldquo;approved&rdquo;</b> and we publish.
+  If anything needs changing &mdash; wording, tone, a detail that is wrong &mdash; tell us which item and what to change,
+  and we will revise it on staging and send this page back updated.
+</div>
+
+<h2>1. Privacy Policy <span class="n">&mdash; the change carriers check first</span></h2>
+<div class="why">Carriers reject registrations whose privacy policy allows contact data to be shared with third parties
+for those parties' own marketing. Our previous wording matched that rejection pattern almost exactly.</div>
+
+<div class="item">
+  <h3>Section 3 &mdash; sharing with business partners</h3>
+  <div class="loc">Privacy Policy &middot; Section 3</div>
+  <div class="diff was"><span class="tag">Before</span>
+    Information could be provided to &ldquo;business partners&rdquo; who might contact you about their own
+    <b>products, services, or promotions</b>.
+  </div>
+  <div class="diff now"><span class="tag">After</span>
+    Rewritten to describe what actually happens: your name and email reach a third-party platform only when that is
+    required to set up a product you have already purchased from us. Immediately followed by the carrier-required
+    commitment that <b>text-messaging consent and phone numbers are never sold or shared with third parties for
+    their own marketing</b>.
+  </div>
+  <div class="note">We rewrote this section rather than deleting it, so the policy still accurately describes
+  how bundled products get provisioned.</div>
+</div>
+
+<div class="item">
+  <h3>Section 13 &mdash; SMS messaging</h3>
+  <div class="loc">Privacy Policy &middot; Section 13</div>
+  <div class="diff was"><span class="tag">Before</span>
+    Described opt-in as <b>verbal consent</b> only, and did not cover marketing messages.
+  </div>
+  <div class="diff now"><span class="tag">After</span>
+    Rewritten in full: opt-in now describes the website checkboxes visitors actually tick, the message types
+    now include marketing, and the non-sharing commitment is repeated here.
+  </div>
+</div>
+
+<div class="item">
+  <h3>Contact details and address</h3>
+  <div class="loc">Privacy Policy &middot; contact block</div>
+  <div class="diff was"><span class="tag">Before</span>
+    <code>admin@soundcurve.com</code> &middot; a Covina, CA address that did not match your registration records.
+  </div>
+  <div class="diff now"><span class="tag">After</span>
+    <code>help@soundcurve.com</code> &middot; SouthPoint Communications, LLC DBA SoundCurve,
+    2477 NW Crimson Ct, McMinnville, OR 97128.
+  </div>
+</div>
+
+<h2>2. Terms of Service <span class="n">&mdash; contained a statement that would have failed on its own</span></h2>
+<div class="why">The SMS section actively contradicted the registration being applied for, and the page still carried
+template text from an unrelated business.</div>
+
+<div class="item">
+  <h3>Section 25 &mdash; SMS messaging</h3>
+  <div class="loc">Terms of Service &middot; Section 25</div>
+  <div class="diff was"><span class="tag">Before</span>
+    &ldquo;We do <b>not</b> send marketing, promotional, or mass SMS messages.&rdquo;
+    The section also referred to <b>&ldquo;your specific printing needs&rdquo;</b> &mdash; leftover boilerplate
+    from a print-shop template.
+  </div>
+  <div class="diff now"><span class="tag">After</span>
+    Replaced with seven short clauses covering everything carriers require: who is sending, how you opt in,
+    how to stop (<b>STOP</b>) and get help (<b>HELP</b>) with the toll-free number and support email named,
+    carrier liability, message frequency and rates, and a link to the Privacy Policy.
+  </div>
+  <div class="note">Anchored so the forms can link straight to the SMS terms rather than the top of a long page.</div>
+</div>
+
+<div class="item">
+  <h3>Legal business name</h3>
+  <div class="loc">Terms of Service &middot; throughout, plus the page title</div>
+  <div class="diff was"><span class="tag">Before</span>
+    &ldquo;South Point Communications&rdquo; &mdash; two words, appearing <b>202 times</b>.
+  </div>
+  <div class="diff now"><span class="tag">After</span>
+    &ldquo;SouthPoint Communications, LLC, doing business as SoundCurve&rdquo; &mdash; one word, matching your EIN
+    record exactly. Carriers match this against official records, so the spelling has to agree.
+  </div>
+</div>
+
+<h2>3. Website forms <span class="n">&mdash; all three</span></h2>
+<div class="why">Consent has to be asked for clearly, separately for marketing and service messages, and it can never be
+a condition of submitting the form.</div>
+
+<div class="item">
+  <h3>The phone-number note</h3>
+  <div class="loc">Contact form and Get Started form</div>
+  <div class="diff was"><span class="tag">Before</span>
+    &ldquo;If you provide your phone number, you are consenting to receive <b>voice calls only, not SMS</b>.&rdquo;
+  </div>
+  <div class="diff now"><span class="tag">After</span>
+    Removed. It was an explicit written refusal of SMS consent sitting on the very pages carriers review.
+  </div>
+</div>
+
+<div class="item">
+  <h3>Consent checkboxes</h3>
+  <div class="loc">All three forms</div>
+  <div class="diff was"><span class="tag">Before</span>
+    One combined consent box. On the Reseller form it was <b>required</b> &mdash; you could not submit without agreeing,
+    which is itself a rejection reason.
+  </div>
+  <div class="diff now"><span class="tag">After</span>
+    Two separate checkboxes &mdash; one for account and service messages, one for marketing messages.
+    <b>Both start unticked and both are optional</b>; the form submits either way. Privacy Policy and Terms links
+    sit directly beneath them.
+  </div>
+  <div class="note">The phone field on the Get Started form stays required &mdash; that is allowed. Only the
+  consent boxes must be optional.</div>
+</div>
+
+<h2>4. Footer <span class="n">&mdash; connecting the two business names</span></h2>
+<div class="item">
+  <h3>Copyright line</h3>
+  <div class="loc">Site footer and landing-page footer</div>
+  <div class="diff was"><span class="tag">Before</span>
+    &copy; 2026 SoundCurve, All Rights Reserved
+  </div>
+  <div class="diff now"><span class="tag">After</span>
+    &copy; 2026 SouthPoint Communications, LLC DBA SoundCurve. All Rights Reserved
+  </div>
+  <div class="note">Carriers need to be able to find the link between the registered company and the brand name
+  without digging &mdash; the footer is where they look.</div>
+</div>
+
+<h2>5. Form layout <span class="n">&mdash; a compliance fix, not just cosmetic</span></h2>
+<div class="item">
+  <h3>Consent text was below the fold</h3>
+  <div class="loc">Get Started panel &middot; desktop and mobile</div>
+  <div class="diff was"><span class="tag">Before</span>
+    On a standard laptop screen the submit button sat <b>167px below the visible area</b> and the Privacy/Terms
+    links <b>105px below</b>. On phones the chat panel appeared above the form.
+  </div>
+  <div class="diff now"><span class="tag">After</span>
+    Spacing tightened so the whole form &mdash; including both consent boxes and both policy links &mdash; fits on
+    screen without scrolling, and the form now comes before the chat panel on mobile.
+  </div>
+  <div class="note">Registration requires a screenshot showing the checkboxes and the policy links together in one
+  frame, and the rules state legal links must not be obscured by other elements or pop-ups.</div>
+</div>
+
+<h2>What happens after you approve</h2>
+<ul>
+  <li>These changes are published from staging to the live site.</li>
+  <li>Opt-in screenshots are captured from the live site (carriers re-check the real URL, so they cannot come from staging).</li>
+  <li>Both registrations are submitted &mdash; the toll-free number for messaging, and the local numbers separately.</li>
+  <li>Approval takes anywhere from a couple of days to several weeks. No business texts can be sent until it clears.</li>
+</ul>
+
+<footer>
+  Questions or changes? Reply to this link or email
+  <a href="mailto:help@soundcurve.com">help@soundcurve.com</a>.<br>
+  SoundCurve &middot; prepared September 1, 2026 &middot; staging build, not yet published.
+</footer>
+
+</div>
+</body>
+</html>

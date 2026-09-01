@@ -1,0 +1,73 @@
+<!-- SoundCurve reporting subdomain - 404 page.
+     Single self-contained paste for a GoHighLevel Custom Code element.
+     Theme rides on the .sc-404 wrapper (never on `body`) so it survives inside GHL's own page.
+     No JavaScript required. -->
+
+<style>
+.sc-404{
+  --panel:#161922; --panel2:#1c2030; --ink:#e7ebf3; --mut:#8b93a7; --line:#2a3042;
+  --accent:#58a6ff; --amber:#d29922;
+  background:linear-gradient(180deg,#0c0e14,#0f1117);
+  color:var(--ink);
+  font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  font-size:14px; line-height:1.5;
+  min-height:100vh; box-sizing:border-box;
+  display:flex; align-items:center; justify-content:center;
+  padding:64px clamp(16px,4vw,56px);
+}
+.sc-404 *,.sc-404 *::before,.sc-404 *::after{box-sizing:border-box;}
+.sc-404 .card{
+  width:100%; max-width:560px; text-align:center;
+  background:var(--panel); border:1px solid var(--line);
+  border-left:4px solid var(--accent);
+  border-radius:14px; padding:44px clamp(20px,5vw,48px);
+}
+.sc-404 .code{
+  font-family:ui-monospace,Menlo,Monaco,Consolas,monospace;
+  font-size:clamp(52px,11vw,76px); font-weight:700; letter-spacing:-.02em;
+  line-height:1; color:var(--accent); margin:0 0 6px;
+}
+.sc-404 .tag{
+  display:inline-block; font-size:10px; font-weight:700; letter-spacing:.07em;
+  text-transform:uppercase; color:var(--amber);
+  background:rgba(210,153,34,.12); border:1px solid rgba(210,153,34,.4);
+  padding:3px 10px; border-radius:20px; margin-bottom:20px;
+}
+.sc-404 h1{ font-size:20px; font-weight:700; letter-spacing:-.01em; margin:0 0 10px; }
+.sc-404 p{ color:var(--mut); font-size:13.5px; margin:0 auto 26px; max-width:420px; }
+.sc-404 .actions{ display:flex; gap:10px; flex-wrap:wrap; justify-content:center; }
+.sc-404 a.btn{
+  display:inline-flex; align-items:center; gap:7px;
+  background:var(--panel2); border:1px solid var(--line); color:var(--ink);
+  padding:10px 16px; border-radius:9px; font-size:13px; font-weight:500;
+  text-decoration:none; transition:border-color .15s, background .15s;
+}
+.sc-404 a.btn:hover{ border-color:var(--accent); background:rgba(88,166,255,.1); }
+.sc-404 a.btn.primary{
+  background:rgba(88,166,255,.14); border-color:rgba(88,166,255,.45); color:#9cc4ff;
+}
+.sc-404 a.btn.primary:hover{ background:rgba(88,166,255,.22); }
+.sc-404 .foot{
+  margin-top:26px; padding-top:16px; border-top:1px solid var(--line);
+  color:var(--mut); font-size:11.5px;
+}
+.sc-404 .foot a{ color:var(--accent); text-decoration:none; }
+.sc-404 .foot a:hover{ text-decoration:underline; }
+</style>
+
+<div class="sc-404">
+  <div class="card">
+    <div class="code">404</div>
+    <div class="tag">Page not found</div>
+    <h1>This page isn&rsquo;t here</h1>
+    <p>The link may be out of date, or the page may have been renamed or moved. Nothing is broken on your end.</p>
+    <div class="actions">
+      <a class="btn primary" href="./">&larr; Back to the report</a>
+      <a class="btn" href="https://soundcurve.com" target="_blank" rel="noopener">soundcurve.com &#8599;</a>
+    </div>
+    <div class="foot">
+      SoundCurve reporting &middot; if you reached this from a shared link, tell
+      <a href="mailto:sales@soundcurve.com">sales@soundcurve.com</a> which link sent you here.
+    </div>
+  </div>
+</div>
