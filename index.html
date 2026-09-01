@@ -1,4 +1,4 @@
-<!-- Published 2026-09-01 15:31 from soundcurve-report.html via build_static.py (GitHub Pages target). Internal Log tab removed. -->
+<!-- Published 2026-09-01 15:52 from soundcurve-report.html via build_static.py (GitHub Pages target). Internal Log tab removed. -->
 <!DOCTYPE html><html lang="en"><head>
 <meta name="robots" content="noindex, nofollow, noarchive"><meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -173,24 +173,40 @@ function showLoc(l){document.querySelectorAll('.rk-loc').forEach(function(d){d.c
 <h3 style="font-size:15px;color:var(--ink);margin-top:22px;">In Progress &amp; Coming Up</h3><ul style="margin:4px 0 14px 22px;"><li><b style="color:var(--ink);">Client status automation.</b> The two workflows that carry a status change from the company record out to its contacts and tags &mdash; the data is already correct; this automates it going forward.</li><li><b style="color:var(--ink);">Carrier registration submission.</b> Once you approve the compliance changes they go live, then both registrations are submitted. Approval times run from a few days to several weeks and nothing can send until they clear.</li><li><b style="color:var(--ink);">Number porting completion.</b> Moving the four Google Business Profile numbers across, scheduled so the listings are never without a working number.</li><li><b style="color:var(--ink);">Active and cancelled client lists.</b> Saved lists in the CRM for quick filtering.</li><li><b style="color:var(--ink);">Website service pages.</b> The consolidate/add plan from the July analysis, plus the new industry and AI receptionist pages.</li></ul></div></section></div><div id="tab-rank" style="display:none;">
 <style>
 .rk-kpis{display:flex;gap:10px;flex-wrap:wrap;margin:14px 0 18px}
-.rk-kpi{border:1px solid var(--line);border-radius:10px;padding:10px 16px;min-width:128px}
+.rk-kpi{flex:1 1 128px;border:1px solid var(--line);border-radius:10px;padding:10px 16px;min-width:128px;background:var(--panel)}
 .rk-kpi b{display:block;font-size:22px;color:#79c0ff}
 .rk-kpi span{font-size:12px;color:var(--mut)}
 .rk-pills{display:flex;gap:6px;flex-wrap:wrap;margin:10px 0 14px}
 .rk-pill{padding:5px 14px;border-radius:20px;border:1px solid var(--line);background:transparent;color:var(--mut);font-weight:600;cursor:pointer;font-size:13px}
 .rk-pill.on{background:rgba(88,166,255,.12);color:#79c0ff}
 .rk-loc{display:none}
-.rk-loc.on{display:block}
-table.rk{border-collapse:collapse;width:100%;max-width:920px;font-size:13px}
+.rk-card{border:1px solid var(--line);border-radius:12px;background:var(--panel);padding:16px 18px;margin:16px 0}
+.rk-card>.rk-h{margin-top:0}
+.rk-loc.on{display:block;border:1px solid var(--line);border-radius:12px;background:var(--panel);padding:16px 18px;margin:16px 0}
+.rk-card table.rk,.rk-loc table.rk{margin-bottom:0}
+.rk-card table.rk tr:last-child td,.rk-loc table.rk tr:last-child td{border-bottom:0}
+@keyframes scShine{0%{background-position:200% 0}55%,100%{background-position:-120% 0}}
+.rk-new{
+  display:inline-block;color:#06121f;font-size:9.5px;font-weight:800;letter-spacing:.05em;
+  padding:1px 6px;border-radius:5px;vertical-align:1px;
+  background:linear-gradient(100deg,#58a6ff 0%,#8fc7ff 38%,#ffffff 50%,#8fc7ff 62%,#58a6ff 100%);
+  background-size:220% 100%;
+  animation:scShine 3s ease-in-out infinite;
+  box-shadow:0 0 0 1px rgba(88,166,255,.45),0 0 10px rgba(88,166,255,.45);
+}
+@media (prefers-reduced-motion:reduce){.rk-new{animation:none;background:#58a6ff}}
+
+
+table.rk{border-collapse:collapse;width:100%;font-size:13px}
 table.rk th{text-align:left;color:var(--mut);font-weight:600;padding:6px 10px;border-bottom:1px solid var(--line);font-size:12px}
 table.rk td{padding:6px 10px;border-bottom:1px solid var(--line)}
 .rk-hit{color:#3fb950;font-weight:700}
 .rk-mid{color:#d29922;font-weight:600}
-.rk-up{color:#3fb950;font-size:11px;font-weight:700}.rk-down{color:#f85149;font-size:11px;font-weight:700}.rk-new{color:#79c0ff;font-size:10px;font-weight:700;letter-spacing:.04em}.rk-lost{color:#8b93a7;font-size:10px;font-weight:600;letter-spacing:.04em}
+.rk-up{color:#3fb950;font-size:11px;font-weight:700}.rk-down{color:#f85149;font-size:11px;font-weight:700}.rk-lost{color:#8b93a7;font-size:10px;font-weight:600;letter-spacing:.04em}
 .rk-dim{color:var(--mut)}
-.rk-note{font-size:12px;color:var(--mut);margin:8px 0 18px;max-width:920px}
+.rk-note{font-size:12px;color:var(--mut);margin:8px 0 18px}
 .rk-h{margin:26px 0 6px;font-size:16px;color:#79c0ff}
-.rk-blurb{font-size:13px;margin:4px 0 10px;max-width:920px}
+.rk-blurb{font-size:13px;margin:0 0 12px;color:var(--mut)}
 </style>
 <section style="max-width:1050px;margin-top:26px;border-top:1px solid var(--line);padding-top:16px;">
 <h2 style="margin:0 0 4px;">Rankings</h2>
@@ -263,7 +279,7 @@ table.rk td{padding:6px 10px;border-bottom:1px solid var(--line)}
 
 <div class="rk-note">Green = top 10 organic or top 3 map pack · Amber = positions 11–30 · — = not in the top 100 · ° = held a spot at the previous day's check (pack and long-tail positions fluctuate daily).</div>
 
-<div class="rk-h">AI Search Visibility</div>
+<div class="rk-card"><div class="rk-h">AI Search Visibility</div>
 <div class="rk-blurb">Where SoundCurve appears inside AI-generated answers (Google AI Overviews checked locally per city; ChatGPT checked nationally). <b>Cited</b> = soundcurve.com linked as a source at that position; <b>Mentioned</b> = the SoundCurve brand named in the answer.</div>
 <table class="rk"><tr><th>Prompt</th><th>AI Overview · Encino</th><th>AI Overview · McMinnville</th><th>ChatGPT</th></tr>
 <tr><td>best business phone system provider in [city]</td><td class="rk-hit">Cited #2 · Mentioned #4</td><td class="rk-hit">Cited #1 · Mentioned #1</td><td class="rk-hit">Mentioned #1 (both cities)</td></tr>
@@ -272,10 +288,10 @@ table.rk td{padding:6px 10px;border-bottom:1px solid var(--line)}
 <tr><td>ai receptionist for a small business</td><td class="rk-dim">—</td><td class="rk-dim">—</td><td class="rk-dim">—</td></tr>
 <tr><td>business phone systems</td><td class="rk-dim">—</td><td class="rk-dim">—</td><td class="rk-dim">—</td></tr>
 <tr><td>law firm / HIPAA / voip provider prompts (5 more)</td><td class="rk-dim">n/a</td><td class="rk-dim">n/a</td><td class="rk-dim">—</td></tr>
-</table>
+</table></div>
 <div class="rk-note">When someone asks Google's AI or ChatGPT who the best provider in Encino or McMinnville is, SoundCurve is in the answer — cited at #1 in three of the four city prompts. The AI-receptionist and industry prompts are the growth target once the new pages launch.</div>
 
-<div class="rk-h">Google Search Console</div>
+<div class="rk-card"><div class="rk-h">Google Search Console</div>
 <div class="rk-blurb">What Google itself reports (snapshot Jul 16, 2026): <b>16,295 impressions</b> across 1,000 search queries. SoundCurve already appears on page 1 for high-value searches — the current work (new pages + titles) is about converting that visibility into clicks:</div>
 <table class="rk"><tr><th>Search</th><th>Avg position</th><th>Impressions</th></tr>
 <tr><td>business phone systems near me</td><td class="rk-hit">1.4</td><td>398</td></tr>
@@ -285,15 +301,15 @@ table.rk td{padding:6px 10px;border-bottom:1px solid var(--line)}
 <tr><td>business voip los angeles</td><td class="rk-hit">8.0</td><td>176</td></tr>
 <tr><td>business voip salem or</td><td class="rk-hit">2.5</td><td>59</td></tr>
 <tr><td>business voip eugene or</td><td class="rk-hit">5.7</td><td>49</td></tr>
-</table>
+</table></div>
 
-<div class="rk-h">Site Health</div>
+<div class="rk-card"><div class="rk-h">Site Health</div>
 <div class="rk-kpis">
 <div class="rk-kpi"><b>96 / 100</b><span>technical audit score (Jul 16)</span></div>
 <div class="rk-kpi"><b>215</b><span>pages crawled · 4 errors</span></div>
 <div class="rk-kpi"><b>1,846</b><span>backlinks monitored</span></div>
 <div class="rk-kpi"><b>927</b><span>referring domains</span></div>
-</div>
+</div></div>
 </section>
 </div>
 <script>
