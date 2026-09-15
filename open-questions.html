@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow, noarchive">
+<title>SoundCurve &mdash; Open Questions, Awaiting Your Answers</title>
+<style>
+:root{
+  --bg:#0f1117; --panel:#161922; --panel2:#1c2030; --ink:#e7ebf3; --mut:#8b93a7; --line:#2a3042;
+  --accent:#58a6ff; --amber:#d29922; --green:#2ea043; --red:#f85149; --purple:#a371f7;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{
+  background:linear-gradient(180deg,#0c0e14,#0f1117); color:var(--ink);
+  font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  font-size:14px; line-height:1.6; padding:32px clamp(16px,4vw,56px) 110px;
+  min-height:100vh;
+}
+.wrap{max-width:900px;margin:0 auto}
+header{border-bottom:1px solid var(--line);padding-bottom:20px;margin-bottom:22px}
+h1{font-size:22px;font-weight:700;letter-spacing:-.01em;margin-bottom:8px}
+.sub{color:var(--mut);font-size:13.5px;max-width:760px}
+.back{display:inline-block;margin-bottom:16px;color:var(--accent);text-decoration:none;font-size:13px}
+.back:hover{text-decoration:underline}
+.callout{border:1px solid rgba(88,166,255,.45);background:rgba(88,166,255,.08);
+  border-radius:10px;padding:14px 16px;margin:18px 0}
+.callout b{color:var(--accent)}
+.callout.warn{border-color:rgba(210,153,34,.45);background:rgba(210,153,34,.08)}
+.callout.warn b{color:var(--amber)}
+h2{font-size:17px;margin:34px 0 6px;padding-top:18px;border-top:1px solid var(--line)}
+h2 .n{color:var(--mut);font-weight:500;font-size:13px;margin-left:6px}
+.why{color:var(--mut);font-size:13px;margin-bottom:14px}
+.kpis{display:flex;gap:10px;flex-wrap:wrap;margin:16px 0 20px}
+.kpi{border:1px solid var(--line);border-radius:10px;padding:10px 16px;min-width:120px;background:var(--panel)}
+.kpi b{display:block;font-size:20px;color:var(--accent)}
+.kpi span{font-size:11.5px;color:var(--mut)}
+table{border-collapse:collapse;width:100%;font-size:13px;margin:12px 0}
+th{text-align:left;color:var(--mut);font-weight:600;padding:7px 10px;border-bottom:1px solid var(--line);font-size:12px}
+td{padding:8px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+td.day{color:var(--accent);font-weight:600;white-space:nowrap}
+.email{background:var(--panel);border:1px solid var(--line);border-left:3px solid var(--accent);
+  border-radius:10px;padding:14px 16px;margin:12px 0}
+.email .meta{font-size:11.5px;color:var(--mut);margin-bottom:8px}
+.email .subj{font-size:14px;font-weight:600;margin-bottom:2px}
+.email .prev{font-size:12.5px;color:var(--mut);font-style:italic;margin-bottom:10px}
+.email .body{font-size:13px;line-height:1.65;border-top:1px solid var(--line);padding-top:10px}
+.email .body p{margin:8px 0}
+.btnish{display:inline-block;background:rgba(88,166,255,.16);border:1px solid rgba(88,166,255,.45);
+  color:#9cc4ff;padding:5px 12px;border-radius:7px;font-size:12.5px;font-weight:600;margin:6px 0}
+.item{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin:12px 0}
+.item h3{font-size:14px;font-weight:600;margin-bottom:6px}
+.no{border-left:3px solid var(--red)}
+.no h3{color:#ff8a80}
+ul{margin:8px 0 0 20px} li{margin:6px 0}
+ol{margin:8px 0 0 22px} ol li{margin:9px 0}
+.q{background:var(--panel2);border:1px solid var(--line);border-left:3px solid var(--amber);
+  border-radius:10px;padding:14px 16px;margin:10px 0}
+.q b{color:var(--amber)}
+.note{color:var(--mut);font-size:12.5px;margin-top:8px;font-style:italic}
+code{background:#000;padding:1px 6px;border-radius:4px;font-size:12px}
+footer{margin-top:40px;border-top:1px solid var(--line);padding-top:18px;color:var(--mut);font-size:12.5px}
+footer a{color:var(--accent);text-decoration:none}
+footer a:hover{text-decoration:underline}
+</style>
+</head>
+<body>
+<div class="wrap">
+<a class="back" href="index.html">&larr; Back to the report</a>
+
+<header>
+  <h1>Open Questions &mdash; Awaiting Your Answers</h1>
+  <div class="sub">
+    Everything we have asked by email that is still unanswered, in one place. Two emails: contract wording
+    and website claims (September 11, follow-up September 14) and the billing sync (September 14).
+    Prepared September 15, 2026.
+  </div>
+</header>
+
+<div class="callout warn">
+  <b>&#9873; Why this page exists.</b><br>
+  Several of these hold up work that is otherwise finished: the Terms of Service edit, the website claim
+  corrections, the campaign copy, and the end-to-end test of the billing sync. Answer in the meeting, or
+  reply to the original email threads, or send answers to <a href="mailto:christian@codedesign.co" style="color:var(--accent)">christian@codedesign.co</a>. A one-line answer per item is enough.
+</div>
+
+<div class="kpis">
+  <div class="kpi"><b>8</b><span>contract and website items open</span></div>
+  <div class="kpi"><b>4</b><span>questions for Sangoma (VoIPBills)</span></div>
+  <div class="kpi"><b>4</b><span>billing questions for SoundCurve</span></div>
+</div>
+
+<h2>1. Contract wording and website claims</h2>
+<div class="why">Email sent September 11; you answered the first round the same day. The follow-up went out September 14 and is what remains open.</div>
+
+<div class="item">
+  <h3>What you already settled (thank you)</h3>
+  <ul>
+    <li>&ldquo;No Contracts&rdquo; becomes <b>&ldquo;No commitments&rdquo;</b>. The 60-day notice is never enforced and comes out of the Terms.</li>
+    <li>Call AI is a <b>separate product</b> from the AI Receptionist; the pricing row stays.</li>
+    <li>A BAA is issued <b>on request</b>; a HIPAA-compliant AI Receptionist is available and custom quoted.</li>
+    <li><b>Remove SOC 2 and ISO 27001</b> from the site. The old uptime monitor was dropped.</li>
+    <li>Overage bills automatically, with a maximum call length and a 30-second silence cut-off as safeguards.</li>
+    <li>Support reps cannot see transcriptions or analyses; they post to the customer&rsquo;s own system.</li>
+  </ul>
+</div>
+
+<div class="q"><b>1. Section 18 of the Terms of Service.</b><br>We drafted a replacement that removes the 60-day notice and the early termination charge and adds that add-ons like the AI Receptionist can be cancelled at the end of the billing cycle. Go with the draft, or mark up the original? And does the <b>early termination charge</b> go along with the notice period, or stay?</div>
+<div class="q"><b>2. Make the Terms edit on staging now?</b><br>So it ships with everything else when staging goes to production, rather than as a separate task later.</div>
+<div class="q"><b>3. &ldquo;Cancel anytime.&rdquo;</b><br>The same tagline as &ldquo;No Contracts.&rdquo; Does it stay, change, or come out? If Section 18 changes as drafted, it becomes accurate and can stay.</div>
+<div class="q"><b>4. HIPAA wording.</b><br>Is the custom-quoted HIPAA-compliant AI Receptionist the same thing as requesting a BAA, or a different configuration with its own price? This decides what the healthcare pages say.</div>
+<div class="q"><b>5. PCI and GDPR.</b><br>SOC 2 and ISO 27001 are coming out. PCI sits in the same sentence on the pricing page, and GDPR in the same sentence on the AI Receptionist page. Do they stay?</div>
+<div class="q"><b>6. Call AI price.</b><br>Is $9.99 per user per month with 500 minutes final, or still a proposal? We will not stage a price you have not committed to.</div>
+<div class="q"><b>7. The 99.999% uptime claim.</b><br>Our suggestion: take it down until a monitor with a public status page has been running long enough to back it, then put it back with a link. Better Stack or Checkly. Want us to set one up?</div>
+<div class="q"><b>8. Two statements we would like to publish.</b><br>The overage safeguards (maximum call length, 30-second silence cut-off) and &ldquo;support reps cannot see transcriptions or analyses; they post to your own system and you own retention.&rdquo; Both are stronger than what the site says now. Confirm and we write them in.</div>
+
+<h2>2. Billing sync: questions for Sangoma (VoIPBills)</h2>
+<div class="why">Email sent September 14. The hourly link from VoIPBills into the CRM is running; these are needed to test it end to end and to decide what comes next. Could you pass this group to your VoIPBills contact?</div>
+
+<div class="q"><b>1. Change notifications.</b><br>The VoIPBills API has no webhook and no last-modified date on customer records. Can VoIPBills tell us when a customer is created, changed, or closed? If not, is hourly polling of the customer list acceptable to them?</div>
+<div class="q"><b>2. A test customer we can change at will.</b><br>All six existing test accounts are on the closed billing cycle and cannot be changed. We need one we can flip between Active and Inactive, rename, and re-address without producing statements, charges, or taxes. Can one be reopened, or a new one created on a cycle that never bills? Which cycle, class, and remit codes should it use?</div>
+<div class="q"><b>3. What went wrong with the update call.</b><br>One careful test write to account 100281 failed partway (a required County value the read call never returns), did not write the field, and left four code fields on that account padded with trailing spaces. We have stopped using the write side. What does a correct update call look like, and could they trim those four fields on 100281?</div>
+<div class="q"><b>4. Creating a starter customer through the API.</b><br>Can an outside system create a customer with just the basics (name, contact, addresses, phone, email), no services, set to Inactive, for your staff to finish by hand? Who assigns the customer ID, which fields are required, and does an inactive customer with no services produce anything in a billing run? This decides item 7 below.</div>
+
+<h2>3. Billing sync: questions for SoundCurve</h2>
+<div class="why">These are about your own process and priorities.</div>
+
+<div class="q"><b>5. How accounts get closed.</b><br>When a client leaves, does your team set the customer Inactive, use Close Account, or both? The sync treats &ldquo;not Active&rdquo; as inactive; we want to be sure that is the flag your team actually changes.</div>
+<div class="q"><b>6. One habit at signup.</b><br>When a lead becomes a client, whoever creates the customer in VoIPBills pastes that customer ID into the company&rsquo;s Origin ID field in the CRM. Ten seconds, and it makes the link between the two systems certain. Can that become part of the signup steps? (Item 7 would make this unnecessary.)</div>
+<div class="q"><b>7. A signup handoff, if you want it.</b><br>At conversion, the CRM creates a starter customer in VoIPBills with the basics, set to Inactive, records the new ID, and tasks your sales team to finish the account in VoIPBills. Your team keeps full control of billing setup; the retyping goes away. Depends on Sangoma&rsquo;s answers to 3 and 4. Is this something you want scoped once we hear back?</div>
+<div class="q"><b>8. Services per account.</b><br>We can already read every service line on every account (plan, seats, texting, caller ID name, e911, voicemail, numbers). Carrying a summary into the CRM lets you build lists like &ldquo;clients without texting&rdquo; or &ldquo;clients without the AI Receptionist&rdquo; for targeted offers. Which services would you most want to market against?</div>
+
+<div class="callout">
+  <b>Once we have the answers</b><br>
+  Items 1 to 8 in section 1 go onto staging and ship with the compliance changes. A test account from Sangoma lets us
+  prove the billing sync end to end and hand you a one-page description of what syncs and when.
+</div>
+
+<footer>
+  Questions or changes? Reply to the email threads or write to
+  <a href="mailto:christian@codedesign.co">christian@codedesign.co</a>.<br>
+  SoundCurve &middot; prepared September 15, 2026 &middot; open questions, awaiting your answers.
+</footer>
+
+</div>
+</body>
+</html>
