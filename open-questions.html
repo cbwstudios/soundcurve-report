@@ -62,6 +62,16 @@ code{background:#000;padding:1px 6px;border-radius:4px;font-size:12px}
 footer{margin-top:40px;border-top:1px solid var(--line);padding-top:18px;color:var(--mut);font-size:12.5px}
 footer a{color:var(--accent);text-decoration:none}
 footer a:hover{text-decoration:underline}
+.item h3{font-size:14px;font-weight:600;margin-bottom:4px}
+.item .loc{color:var(--mut);font-size:11.5px;font-family:ui-monospace,Menlo,monospace;margin-bottom:10px}
+.diff{border-radius:8px;padding:9px 12px;margin:7px 0;font-size:13px;line-height:1.55}
+.was{background:rgba(248,81,73,.10);border-left:3px solid var(--red)}
+.now{background:rgba(46,160,67,.10);border-left:3px solid var(--green)}
+.tag{display:inline-block;font-size:10px;font-weight:700;letter-spacing:.06em;
+  text-transform:uppercase;margin-bottom:4px}
+.was .tag{color:var(--red)} .now .tag{color:var(--green)}
+.note{color:var(--mut);font-size:12.5px;margin-top:8px;font-style:italic}
+
 </style>
 </head>
 <body>
@@ -105,7 +115,18 @@ footer a:hover{text-decoration:underline}
   </ul>
 </div>
 
-<div class="q"><b>1. Section 18 of the Terms of Service.</b><br>We drafted a replacement that removes the 60-day notice and the early termination charge and adds that add-ons like the AI Receptionist can be cancelled at the end of the billing cycle. Go with the draft, or mark up the original? And does the <b>early termination charge</b> go along with the notice period, or stay?</div>
+<div class="q"><b>1. Section 18 of the Terms of Service.</b><br>You said the 60-day notice is never enforced and will come out. We drafted a replacement so you have something to react to. It is a starting point, not legal advice; your attorney can edit it rather than start from a blank page. <b>Go with the draft, or mark up the original?</b> And does the <b>early termination charge</b> go along with the notice period, or stay? You answered the notice, not the charge.
+<div class="diff was"><span class="tag">Today</span>
+<b>18. Termination of Services.</b> The term of each Service Order shall be set forth in the Service Order. The Customer may terminate any Service before expiration of the term of the applicable Service Order by providing SouthPoint with written notice at least sixty (60) days in advance. In such an event, the Customer shall pay SouthPoint a mandatory early termination charge (the &ldquo;Early Termination Charge&rdquo;) as stipulated in the Agreement. Customer hereby agrees: (a) the damages that SouthPoint will incur as a result of such termination will be impossible to ascertain; (b) the Early Termination Charge is reasonable and fairly represents the amount of damages that SouthPoint will sustain as a result of such early termination; (c) the Early Termination Charge establishes liquidated damages and shall not be construed as a penalty of any kind; and (d) Customer waives any right to ascertain SouthPoint&rsquo;s actual damages in the event of such early termination. Payment of an Early Termination Charge shall not relieve the Customer of its obligation to pay any charges incurred under the applicable Service Order prior to the effective date of such termination. Any written notice pursuant to this Section 21.1 must be sent by an authorized representative of Customer in the manner outlined in these T&amp;Cs and must specifically describe the Service to be terminated and the reasons therefore. Customer must also reasonably cooperate with SouthPoint to identify the specific circuit(s) or Service(s) being terminated, and Customer agrees to email its disconnect notice to help@soundcurve.com. Customer understands and agrees that billing will only cease when all information reasonably required by SouthPoint has been provided.
+</div>
+<div class="diff now"><span class="tag">Suggested</span>
+<b>18. Termination of Services.</b> The term of each Service Order shall be set forth in the Service Order. The Customer may terminate any Service by providing SouthPoint with written notice. Termination takes effect at the end of the billing cycle in which the notice is received. No early termination charge applies.<br><br>
+Add-on services, including the AI Receptionist, may be cancelled separately from the underlying phone service and take effect at the end of the current billing cycle.<br><br>
+Termination does not relieve the Customer of the obligation to pay any charges incurred prior to the effective date of termination.<br><br>
+Any written notice under this Section must be sent by an authorized representative of the Customer, must identify the Service to be terminated, and should be emailed to help@soundcurve.com. The Customer agrees to reasonably cooperate with SouthPoint to identify the specific circuits or Services being terminated. Billing ceases once SouthPoint has the information reasonably required to process the disconnection.
+</div>
+<div class="why" style="margin-top:8px;">What changed: the 60-day notice is gone; the Early Termination Charge and the liquidated-damages paragraph (a) to (d) go with it, unless you want the charge kept; a line is added saying add-ons can be cancelled separately at the end of the billing cycle (the answer the campaign needs, so if it is wrong this is the sentence to correct); the obligation to pay charges already incurred, the authorized-representative requirement and the help@soundcurve.com address are kept; and a stray cross-reference to &ldquo;Section 21.1&rdquo; inside Section 18 is removed.</div>
+</div>
 <div class="q"><b>2. Make the Terms edit on staging now?</b><br>So it ships with everything else when staging goes to production, rather than as a separate task later.</div>
 <div class="q"><b>3. &ldquo;Cancel anytime.&rdquo;</b><br>The same tagline as &ldquo;No Contracts.&rdquo; Does it stay, change, or come out? If Section 18 changes as drafted, it becomes accurate and can stay.</div>
 <div class="q"><b>4. HIPAA wording.</b><br>Is the custom-quoted HIPAA-compliant AI Receptionist the same thing as requesting a BAA, or a different configuration with its own price? This decides what the healthcare pages say.</div>
